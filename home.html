@@ -21,6 +21,7 @@
     
     <!-- Navbar -->
 <nav class="navbar">
+    <div class="hamburger" onclick="toggleNavbar()">☰</div>
     <img src="images/logo2.png" alt="">
     <ul class="nav-links">
         <li><a href="html/home.html" class="active">Beranda</a></li>
@@ -124,30 +125,14 @@
 </footer>
 
  <script src="./javascript/scripts.js"></script>
- <!-- <script>
-    // Ambil elemen tombol dan popup
-//let watchVideoButton = document.getElementById('watch-video');
-let videoPopup = document.getElementById('video-popup');
-let closePopupButton = document.getElementById('close-popup');
 
-// Ketika tombol "Tonton Video" diklik
-watchVideoButton.addEventListener('click', () => {
-    videoPopup.style.display = 'flex'; // Tampilkan popup
-});
+<script>
+    function toggleNavbar() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
 
-// Ketika tombol close diklik
-closePopupButton.addEventListener('click', () => {
-    videoPopup.style.display = 'none'; // Sembunyikan popup
-});
-
-// Menutup popup jika pengguna mengklik di luar area konten video
-videoPopup.addEventListener('click', (e) => {
-    if (e.target === videoPopup) {
-        videoPopup.style.display = 'none';
-    }
-});
-
- </script> -->
+</script>
 
 </body>
 </html>

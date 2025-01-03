@@ -105,6 +105,12 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+function toggleNavbar() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
+
 // Close modal when clicking outside of it
 window.onclick = function (event) {
     const modal = document.getElementById("culture-modal");
